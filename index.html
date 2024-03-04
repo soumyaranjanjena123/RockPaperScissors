@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rock Paper Scissors</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<div id="container">
+    <div id="title">
+        <h1>ROCK</h1>
+        <h1>PAPER</h1>
+        <h1>SCISSORS</h1>
+    </div>
+    <div id="score">
+        <p>Human: <span id="human-score">0</span></p>
+        <p>Computer: <span id="computer-score">0</span></p>
+    </div>
+</div>
+<div id="choices">
+    <button onclick="play('rock')">Rock</button>
+    <button onclick="play('paper')">Paper</button>
+    <button onclick="play('scissors')">Scissors</button>
+</div>
+<div id="result"></div>
+<button onclick="showRules()">Rules</button>
+<div id="rules-popup">
+    <span id="close-btn" onclick="closeRules()">X</span>
+    <h1>Game Rules</h1>
+    <ul>
+        <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+        <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+        <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+        <li>If both players lay down the same hand, each player lays down another hand</li>
+    </ul>
+</div>
+<div id="celebration">
+    <img src="https://media.giphy.com/media/3ohzdIuqJoo8QdKlnW/giphy.gif" alt="Celebration">
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

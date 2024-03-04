@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color:#8CC461 ;
+}
+
+#container {
+    display: flex;
+    align-items: flex-start;
+    border: 1px solid white;
+    border-radius: 10px;
+
+}
+#title {
+    text-align: left;
+    margin-right: 20px;
+}
+#score {
+    text-align: left;
+}
+#score p {
+    margin: 0;
+}
+#choices {
+    margin-top: 20px;
+}
+#rules-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #004429;
+    border: 3px solid #fff;
+    z-index: 999;
+}
+#rules-popup h1{
+    color: white;
+}
+
+#rules-popup li{
+    list-style-type:square;
+}
+#rules-popup li::marker {
+    color: yellow;
+  }
+
+
+
+#close-btn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+
+}
+#celebration {
+    display: none;
+}
