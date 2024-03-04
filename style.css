@@ -5,6 +5,7 @@ body {
 }
 
 #container {
+    width: 60%;
     display: flex;
     align-items: flex-start;
     border: 1px solid white;
@@ -23,7 +24,17 @@ body {
 }
 #choices {
     margin-top: 20px;
+    
 }
+
+#choices button{
+    height: 100px;
+    width: 100px;
+
+    border-radius: 50%;
+    border: 10px solid greenyellow;
+}
+
 #rules-popup {
     display: none;
     position: fixed;
