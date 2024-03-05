@@ -1,45 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rock Paper Scissors</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<div id="container">
-    <div id="title">
-        <h1>ROCK</h1>
-        <h1>PAPER</h1>
-        <h1>SCISSORS</h1>
+  <head>
+    <title>Stone Paper Season</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container"> 
+      <header>
+        <div class="point_table"> 
+          <h1>
+            rock <br />
+            paper <br />
+            scissors
+          </h1>
+          <div class="results">
+            <div class="points">
+              Computer <br />Score
+              <div class="PC">0</div>
+            </div>
+            <div class="points">
+              Your <br />
+              Score
+              <div class="player">0</div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="game-starts"> 
+          <div class="game-starts__top">  
+            <div class="icons-playing" id="rock"> <!--item-->
+              <img src="./assets/10.png" width="50%" height="35%" />
+            </div>
+            <div class="icons-playing" id="scissor"> 
+              <img src="./assets/11.png" />
+            </div>
+            <img src="./assets/5.png" id="line_1" />
+            <img src="./assets/6.png" id="line_2" />
+            <img src="./assets/7.png" id="line_3" />
+          </div>
+          <div class="game-starts__bottom icons-playing" id="paper">
+            <img src="./assets/8.png" width="40%" height="40%" />
+          </div>
+        </div>
+
+        
+        <div class="competition">  
+          <div class="pick">  
+            <div class="pick-text">you picked</div>
+            <div class="player-pick-icon"> 
+              <div class="pick-icon" id="player-rock">
+                <img src="./assets/10.png" width="40%" height="35%" />
+              </div>
+              <div class="pick-icon" id="player-scissor">  
+                <img src="./assets/11.png" />
+              </div>
+              <div class="pick-icon" id="player-paper">
+                <img src="./assets/11.png" width="40%" height="40%" />
+              </div>
+            </div>
+          </div>
+          <div class="winner">
+            <div class="winner-text" id="won-text">you won</div> 
+            <div class="winner-text" id="lose-text">you lost</div> 
+            <div class="winner-text" id="draw-text">draw</div> 
+            <div class="subtitle_text">against pc</div> 
+            <button class="click_play">play again</button> 
+            <button class="reclick_play">replay</button> 
+          </div> 
+          <div class="pick"> 
+            <div class="pick-text">PC picked</div> 
+            <div class="pc-pick-icon"> 
+              <div class="pick-icon" id="pc-rock"> 
+                <img src="./assets/10.png" width="40%" height="35%" />
+              </div>
+              <div class="pick-icon" id="pc-scissor"> 
+                <img src="./assets/11.png" />
+              </div>
+              <div class="pick-icon" id="pc-paper"> 
+                <img src="./assets/11.png" width="40%" height="40%" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
-    <div id="score">
-        <p>Your Score: <span id="human-score">0</span></p>
-        <p>Computer Score: <span id="computer-score">0</span></p>
+
+    <div class="display_winner"> 
+      <div class="winner_trophy"> 
+        <img src="./assets/12.png" alt="trophy image" />
+        <img src="./assets/4.png" alt="stars" class="stars" />
+      </div>
+      <div class="winner_msg">hurray!!</div> 
+      <div class="won_msg">you won the game</div> 
+      <button class="winner_click_play">play again</button> 
     </div>
-</div>
-<div id="choices">
-    <button onclick="play('rock')"><img src="hands/icons8-fist-67 1.png" alt=""></button>
-    <button onclick="play('paper')"><img src="hands/icons8-hand-64 1.png" alt=""></button>
-    <button onclick="play('scissors')"><img src="hands/17911 1.png" alt=""></button>
-</div>
-<div id="result"></div>
-<button onclick="showRules()">Rules</button>
-<div id="rules-popup">
-    <span id="close-btn" onclick="closeRules()">X</span>
-    <h1>Game Rules</h1>
-    <ul type>
-        <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
-        <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
-        <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
-        <li>If both players lay down the same hand, each player lays down another hand</li>
-    </ul>
-</div>
-<div id="celebration">
-    <img src="https://media.giphy.com/media/3ohzdIuqJoo8QdKlnW/giphy.gif" alt="Celebration">
-</div>
 
-
-<script src="script.js"></script>
-
-</body>
+    <div class="back"> 
+      <img src="./assets/13.png" alt="back" width="50%" height="50%" />
+    </div>
+    <div class="how_to_play"> 
+      <h4>Game Rules</h4>
+      <div class="rules_displayed"> 
+        <div>
+          <div class="pointer">🟨</div> 
+          <div>
+            Rock beats scissors, scissors beat paper, and paper beats rock.
+          </div>
+        </div>
+        <div>
+          <div class="pointer" style="width: 3rem">🟨</div>
+          <div>
+            Agree ahead of time whether you’ll count off “rock, paper, scissors,
+            shoot” or just “rock, paper, scissors.”
+          </div>
+        </div>
+        <div>
+          <div class="pointer">🟨</div>
+          <div>
+            Use rock, paper, scissors to settle minor decisions or simply play
+            to pass the time
+          </div>
+        </div>
+        <div>
+          <div class="pointer">🟨</div>
+          <div>
+            If both players lay down the same hand, each player lays down
+            another hand
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <button class="rulesBtn">rules</button> 
+      <button class="nextBtn">next</button>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
